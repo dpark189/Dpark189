@@ -129,7 +129,7 @@
         </div>
         <div class="row">
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <a class="portfolio-link" data-toggle="modal" href="https://insta-ounce.herokuapp.com/" target="_blank">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
@@ -144,6 +144,7 @@
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+            <a class="portfolio-link" data-toggle="modal" href="https://github.com/dpark189/JQuestion" target="_blank">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
@@ -157,19 +158,21 @@
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+            <!-- <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3"> -->
+            <a class="portfolio-link" data-toggle="modal" href="https://dpark189.github.io/PixelRanger/" target="_blank">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+              <img id="pixel-ranger-img" class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
               <h4>PixelRanger</h4>
               <p class="text-muted">2D Platforming Game using JavaScript and Canvas</p>
             </div>
           </div>
+
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" href="https://github.com/dpark189" target="_blank">
               <div class="portfolio-hover">
@@ -184,6 +187,7 @@
               <p class="text-muted">See more projects on my Github</p>
             </div>
           </div>
+
           <!-- <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
               <div class="portfolio-hover">
@@ -760,6 +764,10 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script type="text/javascript">
+      const imageHeight = $("#first-portfolio-image").height();
+      const imageWidth = $("#first-portfolio-image").width();
+      $("#pixel-ranger-img").height(imageHeight);
+      $("#pixel-ranger-img").width(imageWidth);
       // const portfolioImageWidth = document.getElementById("first-portfolio-image").width;
       // const portfolioImageHeight = document.getElementById("first-portfolio-image").height;
       // const githubPortfolio = document.getElementById("github-portfolio-image");
